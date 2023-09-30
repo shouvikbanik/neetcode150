@@ -10,6 +10,6 @@ def max_profit(prices):
         if prices[buy] < prices[sell]:
             profit_max = max(profit_max, prices[sell] - prices[buy])
         else:
-            buy=sell
-        sell+=1
+            buy = sell
+        sell += 1
     return profit_max
