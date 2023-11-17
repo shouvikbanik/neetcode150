@@ -12,10 +12,10 @@ class TreeNode(object):
 
 class Test(TestCase):
     def test_is_same_tree_positive(self):
-        self.assertEqual(is_same_tree(self.create_balanced_binary_tree(), self.create_balanced_binary_tree()), True)
+        self.assertEqual(True, is_same_tree(self.create_balanced_binary_tree(), self.create_balanced_binary_tree()))
 
     def test_is_same_tree_negative(self):
-        self.assertEqual(is_same_tree(self.create_balanced_binary_tree(), self.create_unbalanced_binary_tree()), False)
+        self.assertEqual(False, is_same_tree(self.create_balanced_binary_tree(), self.create_unbalanced_binary_tree()))
 
     def create_balanced_binary_tree(self):
         node1 = TreeNode(3)

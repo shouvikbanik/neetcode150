@@ -13,11 +13,11 @@ class Test(TestCase):
     def test_is_subtree_positive(self):
         tree_root = self.create_binary_tree()
         subtree_root = self.create_subtree()
-        self.assertEqual(is_subtree(tree_root, subtree_root), True)
+        self.assertEqual(True, is_subtree(tree_root, subtree_root))
 
     def test_is_subtree_negative(self):
         subtree_root = self.create_subtree()
-        self.assertEqual(is_subtree(None, subtree_root), False)
+        self.assertEqual(False, is_subtree(None, subtree_root))
 
     def create_binary_tree(self):
         node1 = TreeNode(3)

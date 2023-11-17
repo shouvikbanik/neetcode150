@@ -13,11 +13,11 @@ class TreeNode(object):
 class Test(TestCase):
     def test_is_balanced_positive(self):
         root = self.create_balanced_binary_tree()
-        self.assertEqual(is_balanced(root), True)
+        self.assertEqual(True, is_balanced(root))
 
     def test_is_balanced_negative(self):
         root = self.create_unbalanced_binary_tree()
-        self.assertEqual(is_balanced(root), False)
+        self.assertEqual(False, is_balanced(root))
 
     def create_balanced_binary_tree(self):
         node1 = TreeNode(3)

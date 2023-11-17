@@ -11,16 +11,16 @@ class ListNode(object):
 
 class Test(TestCase):
     def test_reverse_list(self):
-        ll = self.create_linked_list([10,20,30,40])
+        ll = self.create_linked_list([10, 20, 30, 40])
         reversed_head = reverse_list(ll)
-        reversed_head_list=self.create_list_from_ll(reversed_head)
-        self.assertEqual(reversed_head_list, [40,30,20,10])
+        reversed_head_list = self.create_list_from_ll(reversed_head)
+        self.assertEqual([40, 30, 20, 10], reversed_head_list)
 
     def create_list_from_ll(self, ll):
         return_list = []
         while (ll != None):
             return_list.append(ll.val)
-            ll=ll.next
+            ll = ll.next
         return return_list
 
     def create_linked_list(self, elements):

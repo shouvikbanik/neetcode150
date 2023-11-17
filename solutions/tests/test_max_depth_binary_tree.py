@@ -13,7 +13,7 @@ class TreeNode(object):
 class Test(TestCase):
     def test_max_depth(self):
         node_root = self.create_binary_tree()
-        self.assertEqual(max_depth(node_root),3)
+        self.assertEqual(3, max_depth(node_root))
 
     def create_binary_tree(self):
         node1 = TreeNode(3)

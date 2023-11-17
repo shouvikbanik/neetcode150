@@ -21,7 +21,7 @@ class Test(TestCase):
         return_list = []
         while (ll != None):
             return_list.append(ll.val)
-            ll=ll.next
+            ll = ll.next
         return return_list
 
     def create_linked_list(self, elements):

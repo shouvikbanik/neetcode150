@@ -5,7 +5,7 @@ from valid_parentheses import is_valid
 
 class Test(TestCase):
     def test_is_valid_negative(self):
-        self.assertEqual(is_valid("{{{}"), False)
+        self.assertEqual(False, is_valid("{{{}"))
 
     def test_is_valid_positive(self):
-        self.assertEqual(is_valid("{{{}}}"), True)
+        self.assertEqual(True, is_valid("{{{}}}"))
