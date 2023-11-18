@@ -1,8 +1,8 @@
 def character_replacement(s, k):
     """
-    :type s: str AABABBA
-    :type k: int 1
-    :rtype: int 4
+    :type s: str
+    :type k: int
+    :rtype: int
     """
     longest_length = 0
     char_dict = {s[0]: 1}
