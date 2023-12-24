@@ -1,6 +1,3 @@
-import math
-
-
 def eval_rpn(tokens):
     """
     :type tokens: List[str]
@@ -8,7 +5,7 @@ def eval_rpn(tokens):
     """
     stack = []
     for element in tokens:
-        if element.isdigit() == True or element[1:].isdigit() == True:
+        if element.isdigit() or element[1:].isdigit():
             stack.append(int(element))
         elif element == '/':
             val1 = stack.pop()
